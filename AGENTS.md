@@ -12,6 +12,7 @@ Instruções e contexto do repositório para agentes de IA que trabalham neste p
 
 - **Framework:** Next.js `16.2.12` (App Router)
 - **Biblioteca UI:** React `^19.0.0` e `react-dom` `^19.0.0`
+- **Efeitos / UI adicional:** `react-confetti` `^6.4.0`
 - **Linguagem:** JavaScript (arquivos `.js`, sem TypeScript configurado no momento)
 - **Estilização:** CSS global (`app/global.css`)
 - **Gerenciador de pacotes:** `npm` (com `package-lock.json`)
@@ -21,9 +22,10 @@ Instruções e contexto do repositório para agentes de IA que trabalham neste p
 ```text
 .
 ├── app/
-│   ├── global.css   # Estilos globais importados pelo layout raiz
-│   ├── layout.js    # RootLayout (html lang="pt-BR", metadata)
-│   └── page.js      # Página inicial (HomePage)
+│   ├── confetti-effect.js  # Componente client-side para animação de confete
+│   ├── global.css          # Estilos globais importados pelo layout raiz
+│   ├── layout.js           # RootLayout (html lang="pt-BR", metadata)
+│   └── page.js             # Página inicial (HomePage, dinâmica via API do TabNews)
 ├── .gitignore       # Ignora node_modules/ e .next/
 ├── package.json     # Dependências e scripts npm
 └── README.md        # Título do repositório

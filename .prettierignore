@@ -1,0 +1,7 @@
+.next/
+.agents/
+.claude/
+node_modules/
+out/
+build/
+package-lock.json

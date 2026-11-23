@@ -26,9 +26,12 @@ Instruções e contexto do repositório para agentes de IA que trabalham neste p
 │   ├── global.css          # Estilos globais importados pelo layout raiz
 │   ├── layout.js           # RootLayout (html lang="pt-BR", metadata)
 │   └── page.js             # Página inicial (HomePage, dinâmica via API do TabNews)
-├── .gitignore       # Ignora node_modules/ e .next/
-├── package.json     # Dependências e scripts npm
-└── README.md        # Título do repositório
+├── .gitignore        # Ignora node_modules/ e .next/
+├── .prettierignore   # Arquivos e diretórios ignorados pelo Prettier
+├── .prettierrc       # Configuração do Prettier (aspas simples, ponto e vírgula, 2 espaços)
+├── eslint.config.mjs # Configuração oficial do ESLint para Next.js (core-web-vitals + prettier)
+├── package.json      # Dependências e scripts npm
+└── README.md         # Título do repositório
 ```
 
 ## Comandos Úteis
@@ -36,8 +39,11 @@ Instruções e contexto do repositório para agentes de IA que trabalham neste p
 - `npm run dev` — Inicia o servidor de desenvolvimento (`next dev`).
 - `npm run build` — Gera o build de produção (`next build`). Use para validar alterações antes de finalizar tarefas.
 - `npm run start` — Inicia o servidor de produção (`next start`).
+- `npm run lint` — Executa o ESLint (`eslint .`) usando `eslint-config-next/core-web-vitals`.
+- `npm run format` — Formata os arquivos do projeto com o Prettier (`prettier --write .`).
+- `npm run format:check` — Verifica a formatação dos arquivos com o Prettier (`prettier --check .`).
 
-> **Nota:** Atualmente não há suíte de testes automatizados nem linter/formatter configurados no `package.json`.
+> **Nota:** Atualmente não há suíte de testes automatizados configurada no `package.json`.
 
 ## Convenções Observadas
 

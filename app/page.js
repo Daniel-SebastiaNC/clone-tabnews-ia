@@ -40,7 +40,8 @@ export default function HomePage() {
       <ConfettiEffect />
       <h1>Em Construção</h1>
       <p className="description">
-        Estamos neste momento reconstruindo o TabNews, um lugar na internet para quem trabalhar com TI.
+        Estamos neste momento reconstruindo o TabNews, um lugar na internet para
+        quem trabalhar com TI.
       </p>
       <p className="stats">
         Total de conteúdos publicados no TabNews:{' '}
